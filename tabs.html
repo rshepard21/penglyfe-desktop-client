@@ -1,0 +1,15 @@
+<div class="etabs-tabgroup">
+    <div class="etabs-tabs"></div>
+    <div class="etabs-buttons"></div>
+</div>
+<div class="etabs-views"></div>
+
+<script>
+    const { ipcRenderer } = require('electron')
+    const TabGroup = require('electron-tabs')
+    const tabGroup = new TabGroup()
+
+    ipcRenderer.on('add-tab', (event, arg) => {
+      tabGroup.addTab(arg)
+    })
+</script>

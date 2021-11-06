@@ -1,0 +1,211 @@
+<html><head>
+    </head><body style="background-color: rgb(35, 33, 58);">
+      <div class="etabs-tabgroup">
+  <div class="etabs-tabs"></div>
+  <div class="etabs-buttons"></div>
+</div>
+<div class="etabs-views"></div>
+    <script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/1cc7c82c/www-widgetapi.vflset/www-widgetapi.js" async=""></script><script src="https://www.youtube.com/iframe_api"></script><script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/wxAi4AKLXL2kBAvXqI4XLSWS/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-Me/xBbBvuuItTu/oAnI7UkdtjfgtuZXbaYLJKHlUuMOlG+7MivghWo/kKOwhQ7pf"></script><script type="text/javascript">
+      window._mNHandle = window._mNHandle || {};
+      window._mNHandle.queue = window._mNHandle.queue || [];
+      medianet_versionId = "3121199";
+  </script>
+  <script src="https://contextual.media.net/dmedianet.js?cid=8CUY2JFBN" async="async"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Language" content="en">
+    <title>PengLyfe</title>
+
+    <link href="/css/baseline.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="/css/affiliate/affiliate.css" rel="stylesheet" type="text/css" media="screen">
+    <link id="stylesheet" type="text/css" href="/css/affiliate/0.css" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/electron-tabs/electron-tabs.css">
+
+    <script>
+      require('./render.js');
+    </script>
+    <script type="text/javascript" src="/scripts/cookies.js"></script>
+    <script type="text/javascript" src="/scripts/0.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LfF6ykaAAAAAEfdH7rsE-7UrXaVY9T_IHfJ5MMd"></script>
+<script type="text/javascript">
+function grecaptchaSubmit(){
+  grecaptcha.execute('6LfF6ykaAAAAAEfdH7rsE-7UrXaVY9T_IHfJ5MMd', { action: 'login' }).then(function (token) {
+    document.getElementById("game").finishedCaptcha(token);
+  });
+}
+</script>
+<!--<script>
+	window.RufflePlayer = window.RufflePlayer || {};
+	window.addEventListener("load", (event) => {
+		const ruffle = window.RufflePlayer.newest();
+		const player = ruffle.createPlayer();
+		const container = document.getElementById("game");
+		container.appendChild(player);
+		player.load({
+			url: "http://media.penglyfe.com/boots.swf",
+			parameters: "lang=en",
+			allowScriptAccess: true
+		});
+	});
+</script>
+<script src="/ruffle/ruffle.js"></script>-->
+<script>
+var player;
+// 2. This code loads the IFrame Player API code asynchronously.
+var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+function onYouTubeIframeAPIReady() {
+        player = new YT.Player('div_YouTube', {
+            videoId: '00000000',     // THE VIDEO ID.
+            width: 0,
+            height: 0,
+            playerVars: {
+                'autoplay': 1,
+                'controls': 1,
+                'showinfo': 0,
+                'modestbranding': 0,
+                'loop': 1,
+                'fs': 0,
+                'cc_load_policty': 0,
+                'iv_load_policy': 3
+            },
+            events: {
+		'onStateChange': onStateChange,
+                'onReady': function (e) {
+                  e.target.setVolume(65);  // YOU CAN SET VALUE TO 100 FOR MAX VOLUME.
+                  player.stopVideo();
+                }
+            }
+        });
+    }
+function onStateChange(state) {
+  if (state.data === YT.PlayerState.ENDED) {
+    player.playVideo();
+  }
+}
+
+function YTMusic(arg)
+{
+player.loadVideoById(arg, 0, "default");
+}
+
+function roomDestroyed()
+{
+player.stopVideo();
+}
+
+function stopYTMusic()
+{
+player.stopVideo();
+}
+</script>
+
+
+
+  
+  
+
+
+
+    <div id="affiliateheaderforcp">
+      <div id="hdrWrap">
+        <div id="navBg">
+          <div id="htmlNav">
+            <ul id="bu_nav">
+              <li><a href="http://www.penglyfe.com/" target="_parent">Website Home</a></li>
+              <li>|</li>
+              <li><a href="https://twitter.com/Penglyfe" target="_parent">PengLyfe Twitter</a></li>
+              <li>|</li>
+              <li><a href="https://discord.com/invite/qrqqq2KUMS" target="_parent">Discord</a></li>
+              <li>|</li>
+              <li><a href="https://www.instagram.com/peng.lyfe/" target="_parent">PengLyfe Instagram</a></li>
+              <li>|</li>
+              <li><a href="https://www.reddit.com/r/Penglyfe/" target="_parent">Reddit</a></li>
+              
+            </ul>
+            <div id="bigscreen">
+              <div id="sm_screen_button"></div>
+            </div>
+            <div id="languageselector" class="langselect">
+              <label class="langselectlabel">Select Language:</label>
+              <select class="langselectfield" id="langselect">
+                <option value="/">English</option>
+                <option value="/pt/">Português</option>
+                <option value="/fr/">Français</option>
+                <option value="/es/">Español</option>
+              </select>
+            </div>
+            <div id="logoff"><a href="http://www.penglyfe.com/" target="_parent">Log Off</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--<div id="game" style="width:100%;height:98%;">
+    </div>-->
+    <object type="application/x-shockwave-flash" id="game" name="game" data="http://media.penglyfe.com/boots.swf" width="100%" height="98%">
+      <param name="menu" value="false">
+      <param name="allowScriptAccess" value="always">
+      <param name="flashvars" value="lang=en">
+      <a href="https://get.adobe.com/flashplayer/">
+        <img id="noflash" src="/images/need-flash-player.gif" alt="Get Adobe Flash player" title="Get Adobe Flash player">
+      </a>
+    </object>
+    <script>
+	    var ws = null;
+	    var game = document.getElementById('game');
+	    function wsClose() {
+	        game.wsOnClose();
+            }
+	    function wsConnect(ip, port) {
+		//alert('Connecting to server. The game is: ' + game.wsOnConnect);
+                ws = new WebSocket('ws://' + ip + ':' + port);
+	        ws.onmessage = function(event){game.wsOnData(event.data);}
+	        ws.onopen = function(){game.wsOnConnect(true);}
+	        ws.onclose = function(){game.wsOnClose();}
+
+            }
+	    function wsSend(data) {
+		//alert('Got data from flash: ' + data);
+	        ws.send(data);
+            }
+	    function wsTest(num) {
+		// alert
+	    }
+    </script>
+    <div style="text-align: center;" id="cpsl-vote">
+      <iframe src="https://cp-server-list.com/cpps-list/util/embed/vote/?id=36" width="384" height="128" frameborder="0" scrolling="no"></iframe>
+    </div>
+    <div id="affiliatefooter">
+      <div id="ftrWrap">
+        <div id="ftrBg">
+          <div id="ftrContent">
+  
+  <div id="811844876">
+  <script type="text/javascript">
+      try {
+          window._mNHandle.queue.push(function (){
+              window._mNDetails.loadTag("811844876", "728x90", "811844876");
+          });
+      }
+      catch (error) {}
+  </script>
+</div>
+
+<iframe src="https://xat.com/embed/chat.php#id=220509302&amp;gn=PengLyfe" width="540" height="405" frameborder="0" scrolling="no"></iframe><br><small><a target="_BLANK" href="https://xat.com/web_gear/chat/embed.php?id=220509302&amp;GroupName=PengLyfe">Get PengLyfe chat group</a> | <a target="_BLANK" href="https://xat.com/PengLyfe"> Goto PengLyfe website</a></small><br>
+
+  
+  <iframe id="div_YouTube" height="0%" width="0%" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" src="https://www.youtube.com/embed/00000000?autoplay=1&amp;controls=1&amp;showinfo=0&amp;modestbranding=0&amp;loop=1&amp;fs=0&amp;cc_load_policty=0&amp;iv_load_policy=3&amp;enablejsapi=1&amp;origin=http%3A%2F%2Fplay.penglyfe.com&amp;widgetid=1"></iframe>
+
+  
+
+
+ 
+
+
+
+</div></div></div></div><div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfF6ykaAAAAAEfdH7rsE-7UrXaVY9T_IHfJ5MMd&amp;co=aHR0cDovL3BsYXkucGVuZ2x5ZmUuY29tOjgw&amp;hl=en&amp;v=wxAi4AKLXL2kBAvXqI4XLSWS&amp;size=invisible&amp;cb=xael9334ijzv" width="256" height="60" role="presentation" name="a-wy5r6eapb19v" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+</body>
+</html>
